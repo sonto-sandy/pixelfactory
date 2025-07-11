@@ -541,6 +541,9 @@ body {
     display: none;
 }
 
+.enquire{
+    padding: 20px;
+}
 /* media query  */
 /* mobile */
 @media (max-width: 600px) {

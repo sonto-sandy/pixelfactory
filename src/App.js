@@ -196,11 +196,12 @@ function App() {
         </div>
       </div>
       <hr style={{ margin: '1px', marginBottom: '10px' }} />
+     <div className="enquire">
       <h1 className="love-text"> We Love Meeting New People. If<br /> You Want To Work With Us, Send A <br /> Message.</h1>
       <div className="btn-Enquire">
         <button className="Enquire-btn">Enquire Now</button>
       </div>
-
+</div>
       {/* <!-- colgimg --> */}
       <div className="colgimg">
         {[1, 2, 3, 4, 5].map((num) => (
