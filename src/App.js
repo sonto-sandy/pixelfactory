@@ -1,9 +1,11 @@
 import images from './images.js';
 import './App.css';
 import { useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 
 function App() {
   const sliderRef = useRef(); // don't use ref outside of useEffect
+  const [menuOpen, setMenuOpen] = useState(false);
   let currentIndex = 0;
 
   useEffect(() => {
@@ -22,6 +24,8 @@ function App() {
     return () => clearInterval(intervalId); // cleanup on unmount
   }, []);
 
+   
+
   return (
     <>
       {/* Header */}
@@ -33,8 +37,11 @@ function App() {
             className="logo-img"
           />
         </div>
-        <div className="hamburger" id="hamburger">☰</div>
-        <nav className="nav-links">
+          <div className={`hamburger ${menuOpen ? 'rotate' : ''}`}
+        id="hamburger"
+        onClick={() => setMenuOpen(!menuOpen)}
+      > <img src={images['menu.png']} alt="menu" /></div>
+       <nav className={`nav-links ${menuOpen ? 'show-menu' : ''}`}>
           <a href="#">Home</a>
           <a href="#">Page</a>
           <a href="#">Blog</a>
