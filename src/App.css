@@ -630,7 +630,7 @@ body {
 
     .navbar {
         position: fixed;
-        top: 30px;
+        top: 10px;
         width: 93vw;
         background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
         z-index: 999;
@@ -639,7 +639,7 @@ body {
         padding: 8px 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 7px;
-        left: 12px;
+        left: 13px;
     }
 
     .hamburger.rotate img {
@@ -670,7 +670,7 @@ body {
         padding-top: 16px;
         flex-wrap: nowrap;
         align-content: flex-start;
-        padding-top: 350px;
+        padding-top: 425px;
     }
 
     .hero-text h1 {
