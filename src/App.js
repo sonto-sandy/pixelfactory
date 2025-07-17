@@ -69,7 +69,6 @@ function App() {
         </div>
       </header>
 
-
       {/* Image slider */}
       <div className="slider">
         <div ref={sliderRef} className="slider-wrapper" id="slider-wrapper">
@@ -87,10 +86,16 @@ function App() {
           <div className="hero-text">
             <h1>Pixel Factory</h1>
             <p>Photography</p>
-            <button className="hero-btn">Book Your Order</button>
+            <div className="hero-actions">
+              <button className="hero-btn">Book Your Order</button>
+              <a href="tel:+919876543210" className="inline-call-icon">
+                <img src={images['ion_call.png']} alt="Call Icon" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
       {/* after-image */}
       <hr style={{ margin: '2px', marginBottom: '10px' }} />
       {/* <!--info-text  --> */}
