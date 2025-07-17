@@ -99,6 +99,7 @@ function App() {
       {/* after-image */}
       <hr style={{ margin: '2px', marginBottom: '10px' }} />
       {/* <!--info-text  --> */}
+      <div className='container'>
       <div className="info-text">
         <h1>“ A photograph is usually looked at -<br /> seldom looked into. ”</h1>
       </div>
@@ -106,6 +107,7 @@ function App() {
       <div className="deni-text">
         <p>Only Photography Has Been Able To Divide Human Life Into A Series Of Moments,<br /> Each Of Them Has The Value
           Of A Complete Existence.</p>
+      </div>
       </div>
       {/* <!--category-of-studio  --> */}
       <div className="category-of-studio">
@@ -125,12 +127,14 @@ function App() {
         </div>
       </div>
       {/* --info-text   */}
+      <div className='container'>
       <div className="info-text">
         <h1>“ Our Works ”</h1>
       </div>
       {/* --deni-text  */}
       <div className="deni-text">
         <p>Photography is just light and time</p>
+      </div>
       </div>
       {/* <!--category-of- gallery --> */}
       <div className="photo-gallery">
@@ -168,7 +172,7 @@ function App() {
           <p>Wedding Photography</p>
         </div>
         <div className="photo-card item8">
-          <img src={images['Slider (3).jpg']} alt="Engagement Photography" />
+          <img src={images['engy.jpg']} alt="Engagement Photography" />
           <p>Engagement Photography</p>
         </div>
         <div className="photo-card item9">
@@ -178,6 +182,7 @@ function App() {
       </div>
       <hr style={{ margin: '2px', marginBottom: '10px' }} />
       {/* <!--info-text  --> */}
+       <div className='container'>
       <div className="info-text">
         <h1>“ Read Our latest Blog ”</h1>
       </div>
@@ -186,12 +191,13 @@ function App() {
         <p>Only Photography Has Been Able To Divide Human Life Into A Series Of Moments,<br /> Each Of Them Has The Value
           Of A Complete Existencee</p>
       </div>
+      </div>
       {/* <!--blog  --> */}
       <div className="blog">
         <div className="blog">
           {/* <!-- Card 1 --> */}
           <div className="blog-card">
-            <label className="upload-container">
+            <label>
               <img id="previewImage1" src={images['engment.png']} alt="Blog Image 1" className="blog-img" />
             </label>
             <h3>Engagement Photography</h3>
@@ -201,9 +207,8 @@ function App() {
 
           {/* <!-- Card 2 --> */}
           <div className="blog-card">
-            <label className="upload-container">
+            <label>
               <img id="previewImage2" src={images['dress.png']} alt="Blog Image 2" className="blog-img" />
-
             </label>
             <h3>Clothing Brand Photography</h3>
             <p>"The Best Fashion Show Is Definitely On The Street. Always Has Been, And Always Will Be."</p>
@@ -211,7 +216,7 @@ function App() {
 
           {/* <!-- Card 3 --> */}
           <div className="blog-card">
-            <label className="upload-container">
+            <label>
               <img id="previewImage3" src={images['family.png']} alt="Blog Image 3" className="blog-img" />
             </label>
             <h3>Family Moments</h3>
