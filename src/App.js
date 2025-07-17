@@ -283,10 +283,10 @@ function App() {
             <div className="footer-bottom">
               <h4 className="footer-p">Follow Us On</h4>
               <div className="footer-icons">
-                <a href="#"> <img src={images['insta.png']} alt="Pixel Factory insta" /></a>
-                <a href="#"><img src={images['twitter.png']} alt="Pixel Factory twitter" /></a>
-                <a href="#"><img src={images['whatsapp.png']} alt="Pixel Factory whatsapp" /></a>
-                <a href="#"><img src={images['youtube.png']} alt="Pixel Factory youtube" /></a>
+                <a href="#"> <img src={images['insta.svg']} alt="Pixel Factory insta" /></a>
+                <a href="#"><img src={images['twitter.svg']} alt="Pixel Factory twitter" /></a>
+                <a href="#"><img src={images['whatsapp.svg']} alt="Pixel Factory whatsapp" /></a>
+                <a href="#"><img src={images['youtube.svg']} alt="Pixel Factory youtube" /></a>
               </div>
             </div>
           </div>
