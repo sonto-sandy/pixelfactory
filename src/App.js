@@ -24,39 +24,51 @@ function App() {
     return () => clearInterval(intervalId); // cleanup on unmount
   }, []);
 
-   
+
 
   return (
     <>
       {/* Header */}
       <header className="navbar">
-        <div className="logo">
-          <img
-            src={images['Logo.png']}
-            alt="Pixel Factory Logo"
-            className="logo-img"
-          />
+        <div className="top-row">
+          <div className="logo">
+            <img
+              src={images['Logo.png']}
+              alt="Pixel Factory Logo"
+              className="logo-img"
+            />
+          </div>
+          <div
+            className={`hamburger ${menuOpen ? 'rotate' : ''}`}
+            id="hamburger"
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            <img src={images['menu.png']} alt="menu" />
+          </div>
         </div>
-          <div className={`hamburger ${menuOpen ? 'rotate' : ''}`}
-        id="hamburger"
-        onClick={() => setMenuOpen(!menuOpen)}
-      > <img src={images['menu.png']} alt="menu" /></div>
-       <nav className={`nav-links ${menuOpen ? 'show-menu' : ''}`}>
+
+        <nav className={`nav-links ${menuOpen ? 'show-menu' : ''}`}>
           <a href="#">Home</a>
           <a href="#">Page</a>
           <a href="#">Blog</a>
           <a href="#">Our Work</a>
           <a href="#">About us</a>
         </nav>
+
         <div className="contact-btn">
           <button>
             <span>
-              <img src={images['material-symbols_call.svg']} alt="Call" className="logo-img" />
+              <img
+                src={images['material-symbols_call.svg']}
+                alt="Call"
+                className="logo-img"
+              />
             </span>
             Contact
           </button>
         </div>
       </header>
+
 
       {/* Image slider */}
       <div className="slider">
@@ -203,12 +215,12 @@ function App() {
         </div>
       </div>
       <hr style={{ margin: '1px', marginBottom: '10px' }} />
-     <div className="enquire">
-      <h1 className="love-text"> We Love Meeting New People. If<br /> You Want To Work With Us, Send A <br /> Message.</h1>
-      <div className="btn-Enquire">
-        <button className="Enquire-btn">Enquire Now</button>
+      <div className="enquire">
+        <h1 className="love-text"> We Love Meeting New People. If<br /> You Want To Work With Us, Send A <br /> Message.</h1>
+        <div className="btn-Enquire">
+          <button className="Enquire-btn">Enquire Now</button>
+        </div>
       </div>
-</div>
       {/* <!-- colgimg --> */}
       <div className="colgimg">
         {[1, 2, 3, 4, 5].map((num) => (
@@ -241,39 +253,39 @@ function App() {
 
           <div className="footer-column">
             <h4>Contact</h4>
-            <p><strong>Address</strong><br/>
-              19, Ganapathi Raj Nagar Main Rd,<br/>
-                Bhaskar Colony, Virugambakkam,<br/>
-                  Chennai, Tamil Nadu 600092</p>
-                <p><strong>Phone</strong><br/>+91 8807626457</p>
-                <p><strong>Email</strong><br/>Pixelfactorystudio1@Gmail.Com</p>
-              </div>
+            <p><strong>Address</strong><br />
+              19, Ganapathi Raj Nagar Main Rd,<br />
+              Bhaskar Colony, Virugambakkam,<br />
+              Chennai, Tamil Nadu 600092</p>
+            <p><strong>Phone</strong><br />+91 8807626457</p>
+            <p><strong>Email</strong><br />Pixelfactorystudio1@Gmail.Com</p>
+          </div>
 
-              <div className="footer-column">
-                <h4>Service</h4>
-                <ul>
-                  <li><a href="#">Wedding Photography</a></li>
-                  <li><a href="#">Professional Photographer</a></li>
-                  <li><a href="#">Personal Photographer</a></li>
-                  <li><a href="#">Pre Wedding Photoshoot</a></li>
-                  <li><a href="#">Kids Photoshoot</a></li>
-                </ul>
-                <div className="footer-bottom">
-                  <h4 className="footer-p">Follow Us On</h4>
-                  <div className="footer-icons">
-                    <a href="#"> <img src={images['insta.png']} alt="Pixel Factory insta" /></a>
-                    <a href="#"><img src={images['twitter.png']} alt="Pixel Factory twitter"/></a>
-                    <a href="#"><img src={images['whatsapp.png']} alt="Pixel Factory whatsapp"/></a>
-                    <a href="#"><img src={images['youtube.png']} alt="Pixel Factory youtube"/></a>
-                  </div>
-                </div>
+          <div className="footer-column">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="#">Wedding Photography</a></li>
+              <li><a href="#">Professional Photographer</a></li>
+              <li><a href="#">Personal Photographer</a></li>
+              <li><a href="#">Pre Wedding Photoshoot</a></li>
+              <li><a href="#">Kids Photoshoot</a></li>
+            </ul>
+            <div className="footer-bottom">
+              <h4 className="footer-p">Follow Us On</h4>
+              <div className="footer-icons">
+                <a href="#"> <img src={images['insta.png']} alt="Pixel Factory insta" /></a>
+                <a href="#"><img src={images['twitter.png']} alt="Pixel Factory twitter" /></a>
+                <a href="#"><img src={images['whatsapp.png']} alt="Pixel Factory whatsapp" /></a>
+                <a href="#"><img src={images['youtube.png']} alt="Pixel Factory youtube" /></a>
               </div>
             </div>
-            </footer>
+          </div>
+        </div>
+      </footer>
 
-          </>
+    </>
 
-          );
+  );
 }
 
-          export default App;
+export default App;

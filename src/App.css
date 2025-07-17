@@ -548,33 +548,6 @@ body {
 /* media query  */
 /* mobile */
 @media (max-width: 600px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
-        z-index: 999;
-        backdrop-filter: blur(10px);
-        position: absolute;
-        top: 82%;
-        left: 0;
-        padding: 10px 2px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .contact-btn {
-        display: none;
-    }
 
     .photo-gallery {
         display: grid;
@@ -585,6 +558,44 @@ body {
     }
 
     .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+
+    }
+
+    .nav-links.show-menu {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 5px 12px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: flex-end;
+        cursor: pointer;
+    }
+
+    .contact-btn {
+        display: none;
+    }
+
+    .navbar {
         position: fixed;
         top: 30px;
         width: 93vw;
@@ -592,27 +603,30 @@ body {
         z-index: 999;
         backdrop-filter: blur(10px);
         display: flex;
-        align-items: center;
-        justify-content: space-between;
         padding: 8px 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 7px;
         left: 12px;
     }
 
-    .nav-links.show-menu {
-        display: flex;
-    }
-
-    .hamburger img {
-        transition: transform 0.3s ease-in-out;
-    }
-
     .hamburger.rotate img {
         transform: rotate(90deg);
-        /* You can change this angle */
+        transition: transform 0.3s ease;
     }
 
+    .top-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+        transition: color 0.3s ease;
+    }
 
 }
 
